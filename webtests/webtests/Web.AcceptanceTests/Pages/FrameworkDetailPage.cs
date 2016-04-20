@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sfa.Eds.Das.Web.AcceptanceTests.Pages
+namespace Web.AcceptanceTests.Pages
 {
     class FrameworkDetailPage : BasePage
     {
