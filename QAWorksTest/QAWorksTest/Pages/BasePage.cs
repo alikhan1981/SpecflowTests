@@ -54,6 +54,7 @@ namespace QAWorksTest.Pages
 
         public void Launch(string pageTitle)
         {
+           // driver.Navigate().GoToUrl("http://QAWorks.com");
             driver.Navigate().GoToUrl(baseUrl);
             verifyPage(pageTitle);
         }

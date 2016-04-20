@@ -14,24 +14,26 @@ namespace QAWorksTest.Pages
     public class ContactPage : BasePage
     {
 
-        [FindsBy(How = How.Id, Using = "ctl00_MainContent_NameBox")]
-        public IWebElement name { get; set; }
 
 
-        [FindsBy(How = How.Id, Using = "ctl00_MainContent_EmailBox")]
-        public IWebElement email { get; set; }
+        //[FindsBy(How = How.Id, Using = "ctl00_MainContent_NameBox")]
+        //public IWebElement name { get; set; }
 
-        [FindsBy(How = How.Id, Using = "ctl00_MainContent_NameBox")]
-        public IWebElement submit { get; set; }
 
-        [FindsBy(How = How.Id, Using = "ctl00_MainContent_MessageBox")]
-        public IWebElement message { get; set; }
+        //[FindsBy(How = How.Id, Using = "ctl00_MainContent_EmailBox")]
+        //public IWebElement email { get; set; }
 
-        [FindsBy(How = How.XPath, Using = ".//*[@id='menu']/li[1]/a")]
-        public IWebElement contactlink { get; set; }
+        //[FindsBy(How = How.Id, Using = "ctl00_MainContent_NameBox")]
+        //public IWebElement submit { get; set; }
 
-        [FindsBy(How = How.XPath, Using = ".//*[@id='ctl00_MainContent_SendButton']")]
-        public IWebElement errObj { get; set; }
+        //[FindsBy(How = How.Id, Using = "ctl00_MainContent_MessageBox")]
+        //public IWebElement message { get; set; }
+
+        //[FindsBy(How = How.XPath, Using = ".//*[@id='menu']/li[1]/a")]
+        //public IWebElement contactlink { get; set; }
+
+        //[FindsBy(How = How.XPath, Using = ".//*[@id='ctl00_MainContent_SendButton']")]
+        //public IWebElement errObj { get; set; }
 
 
         //public By name => By.Id("ctl00_MainContent_NameBox");
@@ -42,12 +44,12 @@ namespace QAWorksTest.Pages
 
         //public By submit => By.Id("ctl00_MainContent_SendButton");
 
-        // By name = By.Id("ctl00_MainContent_NameBox");
-        // By email = By.Id("ctl00_MainContent_EmailBox");
-        // By message = By.Id("ctl00_MainContent_MessageBox");
-        // By submit = By.Id("ctl00_MainContent_SendButton");
-        // By contactlink = By.XPath(".//*[@id='menu']/li[1]/a");
-        // By errObj = By.XPath(".//*[@id='ctl00_MainContent_SendButton']");
+        By name = By.Id("ctl00_MainContent_NameBox");
+        By email = By.Id("ctl00_MainContent_EmailBox");
+        By message = By.Id("ctl00_MainContent_MessageBox");
+        By submit = By.Id("ctl00_MainContent_SendButton");
+        By contactlink = By.XPath(".//*[@id='menu']/li[1]/a");
+        By errObj = By.XPath(".//*[@id='ctl00_MainContent_SendButton']");
 
 
         public void navigateHomePage()
@@ -57,7 +59,7 @@ namespace QAWorksTest.Pages
 
         public void goToContactpage()
         {
-            contactlink.Click();
+            click(contactlink);
         }
 
         public void entervalue(String text, String field)
@@ -65,15 +67,15 @@ namespace QAWorksTest.Pages
             switch (field)
             {
                 case "email":
-                    email.SendKeys(text);
+                    type(text,email);
                     break;
 
                 case "name":
-                    name.SendKeys(text);
+                    type(text,name);
                     break;
 
                 case "message":
-                    message.SendKeys(text);
+                    type(text,message);
                     break;
             }
 
@@ -82,13 +84,13 @@ namespace QAWorksTest.Pages
 
         public void clickSubmit()
         {
-            submit.Click();
+            click(submit);
 
         }
 
         public void verifyErrormessage(String errinfo)
         {
-            verifyTextMessage(errObj, errinfo);
+           // verifyTextMessage(errObj, errinfo);
         }
         public void fillinContactPageForm(Table datatable)
         {

@@ -29,7 +29,7 @@ namespace QAWorksTest.StepDefinitions
         public void WhenIAmOnContactusPage()
         {
 
-            
+            contPage = new ContactPage();
             contPage.goToContactpage();
         }
         [When(@"I enter invalid email '(.*)'")]

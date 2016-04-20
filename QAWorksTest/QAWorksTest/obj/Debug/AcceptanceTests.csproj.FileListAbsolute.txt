@@ -12,4 +12,3 @@ C:\Users\nasirkhan\Documents\SpecflowTests\QAWorksTest\QAWorksTest\obj\Debug\QAW
 C:\Users\nasirkhan\Documents\SpecflowTests\QAWorksTest\QAWorksTest\obj\Debug\QAWorksTest.pdb
 C:\Users\nasirkhan\Documents\SpecflowTests\QAWorksTest\QAWorksTest\bin\Debug\WebDriver.Support.dll
 C:\Users\nasirkhan\Documents\SpecflowTests\QAWorksTest\QAWorksTest\bin\Debug\WebDriver.Support.xml
-C:\Users\nasirkhan\Documents\SpecflowTests\QAWorksTest\QAWorksTest\obj\Debug\AcceptanceTests.csprojResolveAssemblyReference.cache

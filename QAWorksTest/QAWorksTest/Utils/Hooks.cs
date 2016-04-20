@@ -17,7 +17,7 @@ namespace QAWorksTest.Utils
     {
 
         static IWebDriver localDriver;
-        static RemoteWebDriver driver; // used to run test on saucelabs or browserstack tool.
+       // static RemoteWebDriver driver; // used to run test on saucelabs or browserstack tool.
         //load from app.config
         static string host = ConfigurationManager.AppSettings["host"];
         static string baseurl = ConfigurationManager.AppSettings["baseUrl"];
@@ -37,14 +37,15 @@ namespace QAWorksTest.Utils
                 if (testExecution == "headless") // headlessrun is performed on deployment server.
                 {
                     localDriver = new PhantomJSDriver();
-                    FeatureContext.Current["driver"] = localDriver;
+              
+                FeatureContext.Current["driver"] = localDriver;
                 }
                 else
                 {
-                    driver = new FirefoxDriver();
-                    driver.Manage().Window.Maximize();
-
-                }
+                    localDriver = new FirefoxDriver();
+                    localDriver.Manage().Window.Maximize();
+                FeatureContext.Current["driver"] = localDriver;
+            }
 
 
             
