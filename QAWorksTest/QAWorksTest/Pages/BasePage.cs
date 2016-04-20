@@ -59,11 +59,7 @@ namespace QAWorksTest.Pages
         }
 
 
-        public void Open(String standard)
-        {
-            driver.Navigate().GoToUrl(baseUrl + "Standard/Detail/" + standard);
-
-        }
+       
         public void click(By locator)
         {
             find(locator).Click();
