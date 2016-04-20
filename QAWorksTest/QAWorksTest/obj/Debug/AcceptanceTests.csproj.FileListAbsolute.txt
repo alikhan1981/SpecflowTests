@@ -1,0 +1,15 @@
+C:\Users\nasirkhan\Documents\SpecflowTests\QAWorksTest\QAWorksTest\bin\Debug\phantomjs.exe
+C:\Users\nasirkhan\Documents\SpecflowTests\QAWorksTest\QAWorksTest\bin\Debug\phantomjs-license.txt
+C:\Users\nasirkhan\Documents\SpecflowTests\QAWorksTest\QAWorksTest\bin\Debug\QAWorksTest.dll.config
+C:\Users\nasirkhan\Documents\SpecflowTests\QAWorksTest\QAWorksTest\bin\Debug\QAWorksTest.dll
+C:\Users\nasirkhan\Documents\SpecflowTests\QAWorksTest\QAWorksTest\bin\Debug\QAWorksTest.pdb
+C:\Users\nasirkhan\Documents\SpecflowTests\QAWorksTest\QAWorksTest\bin\Debug\nunit.framework.dll
+C:\Users\nasirkhan\Documents\SpecflowTests\QAWorksTest\QAWorksTest\bin\Debug\TechTalk.SpecFlow.dll
+C:\Users\nasirkhan\Documents\SpecflowTests\QAWorksTest\QAWorksTest\bin\Debug\WebDriver.dll
+C:\Users\nasirkhan\Documents\SpecflowTests\QAWorksTest\QAWorksTest\bin\Debug\nunit.framework.xml
+C:\Users\nasirkhan\Documents\SpecflowTests\QAWorksTest\QAWorksTest\bin\Debug\WebDriver.xml
+C:\Users\nasirkhan\Documents\SpecflowTests\QAWorksTest\QAWorksTest\obj\Debug\QAWorksTest.dll
+C:\Users\nasirkhan\Documents\SpecflowTests\QAWorksTest\QAWorksTest\obj\Debug\QAWorksTest.pdb
+C:\Users\nasirkhan\Documents\SpecflowTests\QAWorksTest\QAWorksTest\bin\Debug\WebDriver.Support.dll
+C:\Users\nasirkhan\Documents\SpecflowTests\QAWorksTest\QAWorksTest\bin\Debug\WebDriver.Support.xml
+C:\Users\nasirkhan\Documents\SpecflowTests\QAWorksTest\QAWorksTest\obj\Debug\AcceptanceTests.csprojResolveAssemblyReference.cache
