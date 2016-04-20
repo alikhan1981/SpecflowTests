@@ -14,8 +14,11 @@ namespace QAWorksTest.Pages
     public class ContactPage : BasePage
     {
 
-
-
+        public IWebDriver driver;
+        public ContactPage()
+        {
+            driver = (IWebDriver)FeatureContext.Current["driver"];
+        }
         //[FindsBy(How = How.Id, Using = "ctl00_MainContent_NameBox")]
         //public IWebElement name { get; set; }
 
@@ -29,8 +32,8 @@ namespace QAWorksTest.Pages
         //[FindsBy(How = How.Id, Using = "ctl00_MainContent_MessageBox")]
         //public IWebElement message { get; set; }
 
-        //[FindsBy(How = How.XPath, Using = ".//*[@id='menu']/li[1]/a")]
-        //public IWebElement contactlink { get; set; }
+        [FindsBy(How = How.XPath, Using = ".//*[@id='menu']/li[1]/a")]
+        public IWebElement contactlink { get; set; }
 
         //[FindsBy(How = How.XPath, Using = ".//*[@id='ctl00_MainContent_SendButton']")]
         //public IWebElement errObj { get; set; }
@@ -48,7 +51,7 @@ namespace QAWorksTest.Pages
         By email = By.Id("ctl00_MainContent_EmailBox");
         By message = By.Id("ctl00_MainContent_MessageBox");
         By submit = By.Id("ctl00_MainContent_SendButton");
-        By contactlink = By.XPath(".//*[@id='menu']/li[1]/a");
+      //  By contactlink = By.XPath(".//*[@id='menu']/li[1]/a");
         By errObj = By.XPath(".//*[@id='ctl00_MainContent_SendButton']");
 
 
@@ -59,7 +62,7 @@ namespace QAWorksTest.Pages
 
         public void goToContactpage()
         {
-            click(contactlink);
+            contactlink.Click();
         }
 
         public void entervalue(String text, String field)
